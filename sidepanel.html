@@ -22,8 +22,19 @@
   <h2>Auto Screenshot</h2>
   
   <div class="card">
+    <div style="font-size: 14px; margin-bottom: 15px;">
+      <h3 style="margin: 0 0 10px 0; font-size: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px;">Instructions</h3>
+      <ol style="margin: 0; padding-left: 20px; line-height: 1.6;">
+        <li>Set the capture <b>Interval</b> below.</li>
+        <li>Click <b>"Select Tab & Start Capturing"</b>.</li>
+        <li>Choose the screen or tab to capture in the popup.</li>
+        <li>Screenshots will auto-download to your Downloads folder.</li>
+        <li>If prompted by your browser, click <b>"Allow"</b> to permit downloading multiple files automatically.</li>
+      </ol>
+    </div>
+
     <div class="form-group">
-      <label>1. Interval (minutes)</label>
+      <label>Interval (minutes)</label>
       <input type="number" id="interval" min="0.1" step="any" value="1">
     </div>
 
@@ -31,7 +42,15 @@
     <button id="stopBtn" class="btn-danger" style="display: none;">Stop Capturing</button>
     
     <div class="tip">
-      💡 <b>Tip:</b> If Chrome asks where to save every file, go to settings and turn OFF "Ask where to save each file before downloading".
+      💡 <b>Important Tip - Prevent Save Prompts:</b><br>
+      To stop your browser from asking where to save every single screenshot, turn OFF <b>"Ask where to save each file before downloading"</b> in your browser settings.<br>
+      <ul style="margin: 5px 0 0 0; padding-left: 20px;">
+        <li><b>Chrome:</b> <code>chrome://settings/downloads</code></li>
+        <li><b>Brave:</b> <code>brave://settings/downloads</code></li>
+        <li><b>Edge:</b> <code>edge://settings/downloads</code></li>
+        <li><b>Opera:</b> <code>opera://settings/downloads</code></li>
+        <li><b>Vivaldi:</b> <code>vivaldi://settings/downloads</code></li>
+      </ul>
     </div>
   </div>
 
